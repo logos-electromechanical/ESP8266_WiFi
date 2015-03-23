@@ -19,9 +19,9 @@
  * THE SOFTWARE.
  */
 
-#include "ESP8266.h"
+#include "ESP8266_WiFi.h"
 
-#define SSID        "ITEAD"
+#define SSID        "ARACHNIO"
 #define PASSWORD    "12345678"
 
 ESP8266 wifi(Serial1);

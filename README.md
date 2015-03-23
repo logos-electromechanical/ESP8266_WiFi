@@ -1,23 +1,23 @@
 @mainpage
 
-# WeeESP8266
+# ESP8266_WiFi
 
-An ESP8266 library for Arduino providing an easy-to-use way to manipulate ESP8266.
+An ESP8266 library for Arduino providing an easy-to-use way to manipulate ESP8266. It is based on the ITEAD Studios 
+WeeESP8266 libary and on the Arduino WiFi library. The intent is to provide a Stream-based interface for the ESP8266
+to enable it to be used with existing network libraries produced for the Arduino. 
 
 # Source 
 
-Source can be download at <https://github.com/itead/ITEADLIB_Arduino_WeeESP8266>.
+Source can be downloaded at https://github.com/logos-electromechanical/ESP8266_WiFi
 
 You can clone it by:
 
-    git clone https://github.com/itead/ITEADLIB_Arduino_WeeESP8266.git
+    git clone https://github.com/logos-electromechanical/ESP8266_WiFi.git
 
 # Documentation
 
-Online API documentation can be reached at <http://docs.iteadstudio.com/ITEADLIB_Arduino_WeeESP8266/index.html>.
-
 Offline API documentation can be found under directory 
-[doc](https://github.com/itead/ITEADLIB_Arduino_WeeESP8266/tree/master/doc).
+[doc](https://github.com/logos-electromechanical/ESP8266_WiFi/tree/master/doc).
 
 # How to get started
 
@@ -98,28 +98,11 @@ will be useful for Arduino developers.
 
 # Suppported Mainboards
 
-  - WBoard Pro
-  - MEGA and its derivatives
+  - Arachnio
 
 # Hardware Connection
 
-WeeESP8266 library only needs an uart for hardware connection. All communications 
-are done via uart. In each example, you must specify the uart used by mainboard 
-to communicate with ESP8266 flashed AT firmware.
-
-For MEGA and WBoard Pro, Serial1 will be used if you create an object (named wifi) 
-of class ESP8266 in your code like this:
-
-    #include "ESP8266.h"
-    ESP8266 wifi(Serial1);
-
-the connection should be like these:
-
-    ESP8266_TX->RX1(D19)
-    ESP8266_RX->TX1(D18)
-    ESP8266_CH_PD->3.3V
-    ESP8266_VCC->3.3V
-    ESP8266_GND->GND
+The ESP8266 is installed onto the Arachnio at the factory and no special connection is required. 
     
 # Attention
 

@@ -18,8 +18,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#ifndef __ESP8266_H__
-#define __ESP8266_H__
+#ifndef __ESP8266_WIFI_H__
+#define __ESP8266_WIFI_H__
 
 #include "Arduino.h"
 
